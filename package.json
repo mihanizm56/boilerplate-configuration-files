@@ -1,0 +1,36 @@
+{
+  "name": "@wildberries/boilerplate-configuration-files",
+  "version": "1.0.0-beta.0",
+  "description": "",
+  "dependencies": {
+    "@commitlint/cli": "9.1.2",
+    "commitizen": "4.0.4",
+    "cz-customizable": "6.2.0",
+    "husky": "3.0.9"
+  },
+  "scripts": {
+    "commit": "git add . && git commit --no-edit",
+    "release": "npm run commit && git push && npm publish --access=public",
+    "beta": "npm run commit && git push && npm publish --tag beta --access=public"
+  },
+  "keywords": [],
+  "author": "mihanizm56",
+  "license": "MIT",
+  "files": [
+    "lib/"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g config/git/commitlint.js",
+      "prepare-commit-msg": "node config/git/prepare-commit.js"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "config/git/commitizen.js"
+    }
+  }
+}
