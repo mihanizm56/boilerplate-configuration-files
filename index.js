@@ -20,6 +20,16 @@ module.exports = {
   },
   plugins: ['import', 'react-hooks', 'security', 'unused-imports', 'testcafe'],
   rules: {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
     'prettier/prettier': [
       'error',
       {
