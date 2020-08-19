@@ -1,6 +1,6 @@
 {
-  "name": "@wildberries/boilerplate-eslint-config",
-  "version": "1.0.0-beta.2",
+  "name": "@wildberries/eslint-config",
+  "version": "1.0.0-beta.1",
   "description": "",
   "devDependencies": {
     "@commitlint/cli": "9.1.2",
