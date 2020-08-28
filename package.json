@@ -1,6 +1,6 @@
 {
   "name": "@wildberries/eslint-config",
-  "version": "1.0.2-beta.1",
+  "version": "1.0.2-beta.2",
   "description": "",
   "devDependencies": {
     "@commitlint/cli": "9.1.2",
@@ -9,7 +9,7 @@
     "husky": "3.0.9"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "2.19.0",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.5.0",
     "eslint": "6.6.0",
     "eslint-config-airbnb": "18.0.1",
