@@ -60,6 +60,10 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'error',
     'react/forbid-dom-props': [2, { forbid: ['style'] }],
     'react/jsx-filename-extension': 'off',
+    'padding-line-between-statements': [
+      "error",
+      { blankLine: "always", prev: "*", next: "return" }
+    ],
     'import/no-extraneous-dependencies': [
       'error',
       {
