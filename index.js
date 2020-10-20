@@ -47,6 +47,7 @@ module.exports = {
     'import/order': [
       'error',
       {
+        "newlines-between": "never",
         groups: [
           'builtin',
           'external',
