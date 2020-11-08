@@ -79,6 +79,7 @@ module.exports = {
         ],
       },
     ],
+    "import/no-cycle": 2,
     'no-console': ['error', { allow: ['error'] }],
     quotes: ['error', 'single'],
     'jsx-a11y/click-events-have-key-events': 0,
